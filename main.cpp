@@ -7,16 +7,19 @@ void fibonacci(int n) {
         return;
     }
 
-    int a = 0, b = 1;
+    int a = 1, b = 1, c = 1;
 
+    cout<<a<<endl;
     cout<<b<<endl;
+    cout<<c<<endl;
 
-    for (int i = 1; i <= n-1; i++) {
-        int c = a + b;
+    for (int i = 3; i <= n-1; i++) {
+        int d = a + b + c;
         a = b;
         b = c;
+        c = d;
 
-        cout<<b<<endl;
+        cout<<c<<endl;
 
     }
 
